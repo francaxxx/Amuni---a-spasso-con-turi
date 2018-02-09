@@ -5,28 +5,28 @@
   <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
   <?php include 'header.php';   ?>
 
-  <div class="container-fluid no-padding">
     <div class="row">
-        <video width="100%" height="240px" style="margin-bottom: 15px;"controls>
+<iframe width="100%" height="250" src="https://www.youtube.com/embed/YYN7gGlpLHk?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <!-- <video width="100%" height="240px" controls>
            <source src="img/media/catania.mp4" type="video/mp4">
           Your browser does not support the video tag.
-        </video>
+        </video> -->
       </div> <!-- chiudo row-->
-    </div> <!-- chiudo container-fluid no-padding -->
   <div class="container-fluid">
       <div class="row">
-        <h1 class="titolo">Ciao ‘mbare!</h1>
-        <h4 class="titolino">…e benvenuto a Catania!
-          Mi chiamo <strong>Turiddu</strong> e ti porterò in giro per Catania.
-          <br /> <br />Sono molto felice di mostrarti la mia amata città e
+        <div class="col-md-10 col-md-offset-1">
+        <h1 class="titolo"><strong>Ciao ‘mbare!</strong> </h1>
+        <p class="titolino">…e benvenuto a Catania!
+          <br />   Mi chiamo <strong>Turiddu</strong> e ti porterò in giro per Catania.
+          <br /> Sono molto felice di mostrarti la mia amata città e
            darti una visione speciale di quei luoghi culturali e non che rendono
            la mia città magica e che te la faranno apprezzare nella sua essenza.
            <br /><br />
           Non vedo l’ora di farti conoscere e amare Catania.
-        <strong>Se sei pronto? 3 ,2 ,1, GO!</strong></h4>
-        <button type="button" class="button1">Amunì</button>
+      <br /> <strong>Se sei pronto? 3 ,2 ,1, GO!</strong></p>   <br />
+        <button type="button" class="button1">Inizia il tour</button>
         <button type="button" class="button2">Esplora vicino a me</button>
-
+      </div> <!-- chiudo col-md-10 col-md-offset-1 -->
     </div> <!-- chiudo row-->
 </div> <!-- chiudo container-fluid -->
   <!--jquery -->

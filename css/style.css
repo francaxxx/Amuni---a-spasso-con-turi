@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300");
 @import url("https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300");
+/* variabili */
 body {
   width: 100%;
   height: auto; }
@@ -35,9 +36,9 @@ body {
     #menu ul a li:hover {
       cursor: pointer; }
     #menu ul a:active {
-      background-color: #EFEFEF;
+      background-color: #efefef;
       color: #F35553;
-      border-bottom: 2px solid red; }
+      border-bottom: 2px solid #F35553; }
   #menu #item2 {
     margin-left: .2%;
     width: 49.8%;
@@ -50,7 +51,8 @@ body {
   width: 100%;
   height: 60px;
   background-color: #F35553;
-  position: fixed; }
+  position: fixed;
+  z-index: 1; }
   .nav li {
     font-weight: lighter; }
   .nav .border svg {
@@ -104,7 +106,7 @@ body {
     flex: none;
     width: 100%;
     height: 2px;
-    background: #fefefe;
+    background: #efefef;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
     display: -webkit-box;
@@ -154,7 +156,7 @@ body {
   .nav .outer-menu .menu > div {
     width: 200vw;
     height: 200vw;
-    color: #fefefe;
+    color: #efefef;
     background: #F35553;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
@@ -209,7 +211,7 @@ body {
     -webkit-transition: color 0.4s ease;
     transition: color 0.4s ease; }
   .nav .outer-menu .menu > div > div > ul > li > a:hover {
-    color: #e5e5e5; }
+    color: #efefef; }
   .nav .outer-menu .menu > div > div > ul > li > a:hover:after {
     width: 100%; }
   .nav .outer-menu .checkbox-toggle {
@@ -244,7 +246,7 @@ body {
     -webkit-transition: opacity 0.4s ease 0.4s;
     transition: opacity 0.4s ease 0.4s; }
 
-.container-fluid.no-padding {
+.container.no-padding {
   padding-right: 0px;
   padding-left: 0px; }
 
@@ -252,14 +254,13 @@ body {
   /* Ciao ‘mbare!: */
   font-family: Avenir-Black;
   font-size: 22px;
-  color: #000000;
+  color: black;
   letter-spacing: 0;
   line-height: 20px; }
-.titolo p {
-  /* …e benvenuto a Catan: */
-  font-family: Avenir-Book;
+
+p.titolino {
   font-size: 12px;
-  color: #000000;
+  color: black;
   letter-spacing: 0;
   line-height: 20px; }
 
@@ -269,10 +270,9 @@ body {
   border-radius: 49px;
   width: 100%;
   font-size: 15px;
-  color: #FFFFFF;
+  color: white;
   letter-spacing: 0;
   line-height: 15px;
-  margin-top: 20px;
   padding: 10px 16px;
   font-size: 18px;
   font-weight: normal;
@@ -296,10 +296,10 @@ body {
   border-radius: 49px;
   width: 100%;
   font-size: 15px;
-  color: #FFFFFF;
+  color: white;
   letter-spacing: 0;
   line-height: 15px;
-  margin-top: 20px;
+  margin-top: 5%;
   padding: 10px 16px;
   font-size: 18px;
   font-weight: normal;

@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300");
 @import url("https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300");
 
+/* variabili */
+$tomato:#F35553;
+$bianco:white;
+$nero:black;
+$griglio:#efefef;
+$blu:#53AAF3;
+
+
 body {
   width: 100%;
   height: auto;
@@ -27,10 +35,10 @@ margin: 0 auto;
 li {
   padding-top:30px;
   float:left;
-  background:#F35553;
+  background:$tomato;
   list-style:none;
   text-align:center;
-  color:white;
+  color:$bianco;
   font-family:sans-serif;
   margin-top: .5%;
 }
@@ -45,9 +53,9 @@ a li:hover{
 }
 
 a:active{
- background-color:#EFEFEF;
- color:#F35553;
- border-bottom:2px solid red;
+ background-color:$griglio;
+ color:$tomato;
+ border-bottom:2px solid $tomato;
 }
 /*Background and text colour change on click*/
 }
@@ -67,9 +75,9 @@ a:active{
 .nav {
   width: 100%;
   height: 60px;
-  background-color: #F35553;
+  background-color: $tomato;
   position:fixed;
-
+  z-index: 1;
 
   li {
     font-weight: lighter;
@@ -112,7 +120,7 @@ a:active{
     width: 60px;
     height: 60px;
     padding: 0.5em 1em;
-    background: #F35553;
+    background: $tomato;
     border-radius: 0 0.12em 0.12em 0;
     cursor: pointer;
     -webkit-transition: -webkit-box-shadow 0.4s ease;
@@ -138,7 +146,7 @@ a:active{
             flex: none;
     width: 100%;
     height: 2px;
-    background: #fefefe;
+    background: $griglio;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
     display: -webkit-box;
@@ -192,8 +200,8 @@ a:active{
     .menu > div {
     width: 200vw;
     height: 200vw;
-    color: #fefefe;
-    background: #F35553;;
+    color: $griglio;
+    background: $tomato;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
     -webkit-box-flex: 0;
@@ -252,7 +260,7 @@ a:active{
     transition: color 0.4s ease;
   }
     .menu > div > div > ul > li > a:hover {
-    color: #e5e5e5;
+    color: $griglio;
   }
      .menu > div > div > ul > li > a:hover:after {
     width: 100%;
@@ -300,41 +308,38 @@ a:active{
 }
 
 
-.container-fluid.no-padding {
+.container.no-padding {
   padding-right:0px;
   padding-left:0px;
 }
 
-.titolo {
-h1 {
+.titolo h1 {
+
   /* Ciao ‘mbare!: */
   font-family: Avenir-Black;
   font-size: 22px;
-  color: #000000;
+  color: $nero;
   letter-spacing: 0;
   line-height: 20px;
 }
-p {
-  /* …e benvenuto a Catan: */
-font-family: Avenir-Book;
+
+p.titolino  {
 font-size: 12px;
-color: #000000;
+color:$nero;
 letter-spacing: 0;
 line-height: 20px;
-}
 }
 
 
 /* button - big: */
 .button1 {
-background: #53AAF3;
+background: $blu;
 border-radius: 49px;
 width: 100%;
 font-size: 15px;
-color: #FFFFFF;
+color: $bianco;
 letter-spacing: 0;
 line-height: 15px;
-margin-top: 20px;
 padding: 10px 16px;
 font-size: 18px;
 font-weight: normal;
@@ -355,14 +360,14 @@ border: 1px solid transparent;
 
 /* button 2 - big: */
 .button2 {
-  background: #F35553;
+  background: $tomato;
   border-radius: 49px;
   width: 100%;
   font-size: 15px;
-  color: #FFFFFF;
+  color: $bianco;
   letter-spacing: 0;
   line-height: 15px;
-  margin-top: 20px;
+  margin-top: 5%;
   padding: 10px 16px;
   font-size: 18px;
   font-weight: normal;
