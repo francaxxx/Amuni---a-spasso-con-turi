@@ -317,4 +317,15 @@ p.titolino {
   background-image: none;
   border: 1px solid transparent; }
 
+/* Map Page */
+iframe.margin-top {
+  margin-top: 60px;
+  width: 100%; }
+
+h1.titolo {
+  background: #FF015F;
+  width: 100%;
+  height: 120px;
+  color: white; }
+
 /*# sourceMappingURL=style.css.map */
