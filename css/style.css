@@ -1,19 +1,63 @@
 @import url("https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300");
 @import url("https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300");
+body {
+  width: 100%;
+  height: auto; }
+
+#menu-btn {
+  text-align: end; }
+  #menu-btn svg {
+    margin-top: 25px;
+    margin-left: 20px; }
+
+#item2 {
+  margin-left: 1%;
+  width: 49%;
+  height: 60px; }
+
+#item1 {
+  width: 50%;
+  height: 60px; }
+
+#menu {
+  margin: 0 auto; }
+  #menu li {
+    padding-top: 30px;
+    float: left;
+    background: #F35553;
+    list-style: none;
+    text-align: center;
+    color: white;
+    font-family: sans-serif; }
+  #menu ul {
+    height: 60px;
+    margin-left: -16%;
+    /*Cursor and text undelrine on hover*/
+    /*Background and text colour change on click*/ }
+    #menu ul a ul li:hover {
+      cursor: pointer; }
+
+#menu a:active {
+  background-color: #EFEFEF;
+  color: #F35553;
+  border-bottom: 2px solid red; }
+
 .nav {
   width: 100%;
   height: 60px;
   padding-left: 10px;
   background-color: #F35553; }
-  .nav svg {
-    vertical-align: middle;
-    margin: 25px; }
   .nav li {
     font-weight: lighter; }
+  .nav .border svg {
+    vertical-align: middle;
+    margin: 25px; }
   .nav .border a {
     color: white;
     text-decoration: none;
     text-align: left; }
+  .nav .border .row {
+    margin: 0; }
   .nav .outer-menu .checkbox-toggle {
     position: absolute;
     top: 0;
