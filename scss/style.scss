@@ -76,7 +76,7 @@ a:active{
   width: 100%;
   height: 60px;
   background-color: $tomato;
-  position:fixed;
+  position: fixed;
   z-index: 1;
 
   li {
@@ -395,9 +395,16 @@ border: 1px solid transparent;
   width: 100%;
 }
 
-h1.titolo {
-background: #FF015F;
-width: 100%;
-height: 120px;
-color: $bianco;
+.prova {
+  width: 200px;
+  height: 300px;
+  background-color: pink;
+  position:static;
 }
+
+// h1.titolo {
+// background: #FF015F;
+// width: 100%;
+// height: 120px;
+// color: $bianco;
+// }
