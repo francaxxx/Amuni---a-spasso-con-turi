@@ -329,7 +329,7 @@ iframe.margin-top {
   height: 8vh;
   background-color: #BE2525;
   margin-top: 60px;
-  margin-bottom: 20px; }
+  margin-bottom: 35px; }
   .prova h2 {
     font-size: 3vh;
     padding: 2.5vh;
@@ -365,7 +365,7 @@ p.testo {
 img {
   width: 100%;
   height: auto;
-  margin-top: 10px; }
+  margin-top: 15px; }
 
 .margin-right {
   margin-left: 15vh; }
@@ -382,13 +382,13 @@ img {
   color: black;
   position: relative;
   top: 8px;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  padding: 0 0 0 70px; }
 
 .list {
   width: 100%;
   border-bottom: 1px solid #BE2525;
   border-radius: 10px;
-  padding: 2px 5px 2px 55px;
   box-sizing: border-box;
   position: relative;
   font-size: .8em;
@@ -396,16 +396,19 @@ img {
   cursor: pointer; }
   .list img {
     width: 40px;
-    height: 40px; }
+    height: 40px;
+    position: absolute;
+    top: -4px;
+    margin-top: -2px; }
   .list ul {
     transition: all ease 1s;
     max-height: 0px;
     overflow: hidden;
     padding: 0;
-    list-style: none; }
+    line-height: 3vh; }
   .list ul.open {
-    max-height: 200px;
-    padding: 0px 0px 0px 17px; }
+    max-height: 300px;
+    padding: 20px 35px 0px 90px; }
   .list ul li:first-child {
     margin-top: 15px; }
   .list .list:not(:first-child) {
@@ -416,8 +419,8 @@ img {
 .icon {
   position: absolute;
   width: 30px;
-  left: -1px;
-  top: 3px;
+  left: 318px;
+  top: -3px;
   bottom: 10px;
   background: #BE2525;
   border-radius: 73px;

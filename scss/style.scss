@@ -403,8 +403,7 @@ border: 1px solid transparent;
   height: 8vh;
   background-color:$percorso1;
   margin-top: 60px;
-  margin-bottom: 20px;
-
+  margin-bottom: 35px;
   h2 {
     font-size:3vh;
     padding: 2.5vh;
@@ -449,7 +448,7 @@ p.testo {
 img {
   width: 100%;
   height: auto;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .margin-right {
@@ -474,13 +473,23 @@ img {
   position: relative;
   top: 8px;
   font-size: 1.2em;
+  padding: 0 0 0 70px;
 }
 
 .list {
+  // width: 100%;
+  // border-bottom: 1px solid #BE2525;
+  // border-radius:10px;
+  // padding: 2px 5px 2px 55px;
+  // box-sizing: border-box;
+  // position: relative;
+  // font-size: .8em;
+  // font-weight: lighter;
+  // cursor: pointer;
+
   width: 100%;
   border-bottom: 1px solid #BE2525;
-  border-radius:10px;
-  padding: 2px 5px 2px 55px;
+  border-radius: 10px;
   box-sizing: border-box;
   position: relative;
   font-size: .8em;
@@ -490,19 +499,33 @@ img {
 img {
   width: 40px;
   height: 40px;
+  position: absolute;
+  top: -4px;
+  margin-top: -2px;
 }
+
+
+
+//  img {
+//     width: 50px;
+//     height: 50px;
+//     position: absolute;
+//     left: 220px;
+//     top: -36px;
+// }
+
 
 ul {
   transition: all ease 1s;
   max-height: 0px;
   overflow: hidden;
   padding: 0;
-  list-style: none;
+  line-height: 3vh;
 }
 
 ul.open {
-  max-height: 200px;
-  padding: 0px 0px 0px 17px;
+  max-height: 300px;
+  padding: 20px 35px 0px 90px;
 }
 
 ul li:first-child {
@@ -522,8 +545,8 @@ ul li:first-child {
 .icon {
   position: absolute;
   width: 30px;
-  left: -1px;
-  top: 3px;
+  left: 318px;
+  top: -3px;
   bottom: 10px;
   background: #BE2525;
   border-radius: 73px;
@@ -535,6 +558,22 @@ ul li:first-child {
   line-height: 30px;
   font-weight: bold;
   content: inherit;
+
+  // position: absolute;
+  // width: 30px;
+  // left: -1px;
+  // top: 3px;
+  // bottom: 10px;
+  // background: #BE2525;
+  // border-radius: 73px;
+  // height: 30px;
+  // color: white;
+  // text-align: center;
+  // vertical-align: middle;
+  // font-size: 15px;
+  // line-height: 30px;
+  // font-weight: bold;
+  // content: inherit;
 }
 
 .spazio {
