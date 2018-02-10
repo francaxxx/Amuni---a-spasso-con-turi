@@ -327,7 +327,7 @@ iframe.margin-top {
 .prova {
   width: 100%;
   height: 8vh;
-  background-color: #FF015F;
+  background-color: #BE2525;
   margin-top: 60px;
   margin-bottom: 20px; }
   .prova h2 {
@@ -338,13 +338,14 @@ iframe.margin-top {
     text-align: center; }
 
 .small-button {
-  padding: 10px;
-  background: #53AAF3;
+  padding: 15px;
+  background: #BE2525;
   border-radius: 28px;
   width: 100%;
   height: 60px;
   margin-left: -20px;
-  color: white; }
+  color: white;
+  text-decoration: none; }
 
 h5.nomePercorso {
   margin-left: 3vh;
