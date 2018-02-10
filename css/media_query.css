@@ -15,24 +15,33 @@
   }
 }
 
-@media screen and (max-width:690px){
+@media screen and (max-width:680px){
   .small-button {
-  margin-left: 8vh;  }
+  margin-left: 8vh;
+  }
 }
 
   @media screen and (max-width:520px){
     .small-button {
     margin-left: 1vh;
   }
+
+
+
     }
 
 
 @media screen and (max-width:393px){
   .small-button {
     padding: 9px;
-    margin-left: -3vh;
+    margin-left: -5vh;
     }
+
     prova {
     margin-bottom: 30px;
 }
+p.testo {
+  line-height: 5vh;
+}
+
 }
