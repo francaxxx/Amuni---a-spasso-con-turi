@@ -367,6 +367,7 @@ border: 1px solid transparent;
   border-radius: 49px;
   width: 100%;
   font-size: 15px;
+  margin-bottom: 15px;
   color: $bianco;
   letter-spacing: 0;
   line-height: 15px;
@@ -580,3 +581,5 @@ ul li:first-child {
   width: 20px;
   height: 60px;
 }
+
+.mySlides {display:none;}

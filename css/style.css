@@ -298,6 +298,7 @@ p.titolino {
   border-radius: 49px;
   width: 100%;
   font-size: 15px;
+  margin-bottom: 15px;
   color: white;
   letter-spacing: 0;
   line-height: 15px;
@@ -436,5 +437,8 @@ img {
 .spazio {
   width: 20px;
   height: 60px; }
+
+.mySlides {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */
