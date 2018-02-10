@@ -462,3 +462,82 @@ img {
   justify-content: center;
   margin-top: 5vh;
 }
+
+
+
+
+/* Primo itinerario */
+
+.title {
+  font-weight: bold;
+  color:black;
+  position: relative;
+  top: 8px;
+  font-size: 1.2em;
+}
+
+.list {
+  width: 100%;
+  border-bottom: 1px solid #BE2525;
+  border-radius:10px;
+  padding: 2px 5px 2px 55px;
+  box-sizing: border-box;
+  position: relative;
+  font-size: .8em;
+  font-weight: lighter;
+  cursor: pointer;
+
+img {
+  width: 40px;
+  height: 40px;
+}
+
+ul {
+  transition: all ease 1s;
+  max-height: 0px;
+  overflow: hidden;
+  padding: 0;
+  list-style: none;
+}
+
+ul.open {
+  max-height: 200px;
+  padding: 0px 0px 0px 17px;
+}
+
+ul li:first-child {
+  margin-top: 15px;
+}
+
+.list:not(:first-child) {
+  margin-top: 5px;
+}
+
+.list li {
+  height: 30px;
+}
+
+}
+
+.icon {
+  position: absolute;
+  width: 30px;
+  left: -1px;
+  top: 3px;
+  bottom: 10px;
+  background: #BE2525;
+  border-radius: 73px;
+  height: 30px;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: bold;
+  content: inherit;
+}
+
+.spazio {
+  width: 20px;
+  height: 60px;
+}
