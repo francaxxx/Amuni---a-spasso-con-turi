@@ -713,83 +713,32 @@ ul li:first-child {
 }
 
 
-//
-// .social ul {
-//     list-style: none;
-//     margin: 0 auto;
-//     position: absolute;
-//
-// }
-// .social li {
-//   list-style: none;
-//   background-color: #F35553;
-//   border-radius: 100px;
-//   color: white;
-//   padding: 10px;
-//   width: 40px;
-//   text-align: center;
-//   height: 40px;
-//   float: left;
-//   margin-left: 30px;
-//
-// }
-
-.center-div
-{
-  position: absolute;
-  margin: auto;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 9em;
-  height: 4em;
-  border-radius: 3px;
+section nav ul {
+  margin:0;
+  padding:0;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  list-style: none;
 }
 
-.social .fa-facebook-f {
-  list-style: none;
-  background-color: #F35553;
-  border-radius: 100px;
-  color: white;
-  padding: 5px;
-  width: 1em;
-  text-align: center;
-  height: 1em;
+
+section nav li {
   float: left;
-  margin-right: 1em;
-  font-size: 30px;
-}
+  width: 6vh;
+  height: 6vh;
+  background-color: $tomato;
+  border-radius: 100px;
+  text-align: center;
+  font-size: 2vh;
+  line-height: 6vh;
+  color: $bianco;
 
-.social li {
-  list-style: none;
 }
-.fab  {
-  position: absolute;
-  margin: auto;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-.social .fa-instagram {
-  list-style: none;
-background-color: #F35553;
-border-radius: 100px;
-color: white;
-padding: 5px;
-width: 1em;
-text-align: center;
-height: 1em;
-float: left;
-font-size: 30px;
-}
-
-
-
 /* itineraario map */
-
-/**
- *  Demo styles
- */
 
 *,
 *:after,
