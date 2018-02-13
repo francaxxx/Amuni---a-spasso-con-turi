@@ -728,16 +728,38 @@ section nav ul {
 
 section nav li {
   float: left;
-  width: 6vh;
-  height: 6vh;
+  width: 39px;
+  height: 39px;
   background-color: $tomato;
   border-radius: 100px;
   text-align: center;
   font-size: 2vh;
-  line-height: 6vh;
+  line-height: 39px;
   color: $bianco;
 
 }
+
+.flag nav ul {
+  margin:0;
+  padding:0;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  list-style: none;
+}
+
+
+.flag nav li {
+  float: left;
+}
+.setting {
+  text-align:center;
+  margin-top: 15vh;
+}
+
 /* itineraario map */
 
 *,
