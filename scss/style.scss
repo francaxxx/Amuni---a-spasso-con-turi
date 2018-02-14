@@ -713,7 +713,8 @@ ul li:first-child {
 }
 
 
-section nav ul {
+section nav {
+ ul {
   margin:0;
   padding:0;
   display: flex;
@@ -723,43 +724,66 @@ section nav ul {
   -webkit-justify-content: center;
   -webkit-align-items: center;
   list-style: none;
-}
+  }
 
 
-section nav li {
+li {
   float: left;
   width: 39px;
   height: 39px;
   background-color: $tomato;
   border-radius: 100px;
   text-align: center;
-  font-size: 2vh;
+  font-size: 2.5vh;
   line-height: 39px;
   color: $bianco;
 
+  }
 }
 
-.flag nav ul {
-  margin:0;
-  padding:0;
-  display: flex;
-  display: -webkit-flex;
-  justify-content: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  -webkit-align-items: center;
-  list-style: none;
-}
-
-
-.flag nav li {
-  float: left;
-}
 .setting {
   text-align:center;
-  margin-top: 15vh;
+  margin-top: 10vh;
 }
 
+.flag {
+  nav ul {
+    margin:0;
+    padding:0;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    list-style: none;
+  }
+
+  nav li {
+    float: left;
+  }
+   input {
+    display: none;
+  }
+
+  input:checked  {
+    border:10px solid $tomato;
+
+ }
+  }
+
+  .bottom  h6{
+    position:fixed;
+  bottom:0px;
+  height:20px;
+  width:100%;
+  text-align:center;
+  margin-top:1vh;
+  }
+
+h5 {
+  font-size: 2.5vh;
+}
 /* itineraario map */
 
 *,
@@ -795,7 +819,6 @@ section nav li {
   right: 0;
   margin: auto;
   width: 100%;
-  height: auto;
 }
 
 /* Google Map (dynamic) */
@@ -867,8 +890,8 @@ section nav li {
 
 @media only screen and (min-width: 768px) {
   .map {
-    height: 100%;
-    height: 100vh;
+    width: 100%;
+    height: 500px;
   }
 
   .map__legend {
@@ -897,12 +920,11 @@ section nav li {
   }
 
   .map__legend a:hover {
-    color: #ff6600;
+    color: $tomato;
   }
 
   .map__frame {
-    min-height: 100%;
-    background: #fff;
+    background: $bianco;
   }
 
   .map__frame + .map__legend {
@@ -916,10 +938,39 @@ section nav li {
     z-index: 1;
     display: inline-block;
     padding: 6px 12px;
-    background: #ff6600;
-    color: #fff;
+    background:$tomato;
+    color: $bianco;
     font-size: 14px;
     text-transform: uppercase;
   }
 
 }
+
+
+
+
+
+
+
+//
+//
+// /* Map */
+//
+// html {
+// 	height: 100%;
+// }
+// body {
+// 	height: 100%;
+// 	margin: 0;
+// 	padding: 0;
+// }
+// #map-canvas {
+// 	height: 100%;
+// }
+// #iw_container .iw_title {
+// 	font-size: 16px;
+// 	font-weight: bold;
+// }
+// .iw_content {
+// 	padding: 15px 15px 15px 0;
+// }
