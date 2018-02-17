@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300");
-@import url("https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300");
 
 /* variabili */
 $tomato:#F35553;
@@ -22,6 +21,7 @@ body {
   font-family: 'Roboto','Helvetica Neue', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
+  line-height: 1.8;
   letter-spacing: 0;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -49,14 +49,14 @@ body {
 margin: 0 auto;
 
 li {
-  padding-top:30px;
+  padding:6px;
   float:left;
   background:$tomato;
   list-style:none;
   text-align:center;
   color:$bianco;
   font-family:sans-serif;
-  margin-top: .5%;
+  border-top: 1px solid $bianco;
 }
 
 ul {
@@ -68,25 +68,71 @@ a li:hover{
   cursor: pointer;
 }
 
-a:active{
- background-color:$griglio;
- color:$tomato;
- border-bottom:2px solid $tomato;
+a {
+
+  text-decoration: none;
 }
+
 /*Background and text colour change on click*/
 }
 #item2 {
-  margin-left: .2%;
-  width: 49.8%;
-   height:60px;
+  width: 50%;
 }
 
 #item1 {
    width:50%;
-   height:60px;
+   border-right: 1px solid white;
+}
+}
+#item2:hover, #item1:hover {
+    background-color:$griglio;
+    color:$tomato;
+    font-weight: bold;
+    border-bottom: 1px solid darkred;
 }
 
+.btn:hover,
+.btn:active {
+  // background-color:$griglio;
+ color:$tomato;
+  // font-weight: bold;
+  text-decoration: none;
 }
+
+.collapse {
+  width: 100%;
+  height: 130px;
+  background-color: $griglio;
+  overflow-x: scroll;
+  white-space: nowrap;
+  justify-content: center;
+
+
+  img {
+    width: 40px;
+    height: auto;
+  }
+
+  ol {
+  font-family: sans-serif;
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+  float: left;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 30%;
+  justify-content: center;
+}
+  // #lista {
+  //   LEFT: 0;
+  //   POSITION: absolute;
+  // }
+
+}
+
 
 .nav {
   width: 100%;
@@ -136,7 +182,6 @@ a:active{
     width: 60px;
     height: 60px;
     padding: 0.5em 1em;
-    background: $tomato;
     border-radius: 0 0.12em 0.12em 0;
     cursor: pointer;
     -webkit-transition: -webkit-box-shadow 0.4s ease;
@@ -323,27 +368,24 @@ a:active{
 }
 }
 
-
 .container.no-padding {
   padding-right:0px;
   padding-left:0px;
 }
 
 .titolo h1 {
-
-  /* Ciao ‘mbare!: */
   font-family: Avenir-Black;
   font-size: 22px;
   color: $nero;
   letter-spacing: 0;
-  line-height: 20px;
+  line-height:1.8;
 }
 
 p.titolino  {
 font-size: 12px;
 color:$nero;
 letter-spacing: 0;
-line-height: 20px;
+line-height:1.8;
 }
 
 
@@ -359,7 +401,7 @@ line-height: 15px;
 padding: 10px 16px;
 font-size: 18px;
 font-weight: normal;
-line-height: 1.42857143;
+// line-height: 1.42857143;
 text-align: center;
 white-space: nowrap;
 vertical-align: middle;
@@ -388,7 +430,7 @@ border: 1px solid transparent;
   padding: 10px 16px;
   font-size: 18px;
   font-weight: normal;
-  line-height: 1.42857143;
+  // line-height: 1.42857143;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -455,7 +497,7 @@ p.testo {
   padding-left: 5vh;
   padding-right: 5vh;
   padding-bottom: 5vh;
-  line-height: 6vh;
+  // line-height: 6vh;
 }
 
 
@@ -534,7 +576,7 @@ ul {
   max-height: 0px;
   overflow: hidden;
   padding: 0;
-  line-height: 3vh;
+  // line-height: 3vh;
 }
 
 ul.open {
@@ -569,25 +611,9 @@ ul li:first-child {
   text-align: center;
   vertical-align: middle;
   font-size: 15px;
-  line-height: 30px;
+  // line-height: 30px;
   font-weight: bold;
   content: inherit;
-
-  // position: absolute;
-  // width: 30px;
-  // left: -1px;
-  // top: 3px;
-  // bottom: 10px;
-  // background: #BE2525;
-  // border-radius: 73px;
-  // height: 30px;
-  // color: white;
-  // text-align: center;
-  // vertical-align: middle;
-  // font-size: 15px;
-  // line-height: 30px;
-  // font-weight: bold;
-  // content: inherit;
 }
 
 .spazio {
@@ -606,11 +632,9 @@ ul li:first-child {
 }
 
 .btn {
-  background-color:$tomato;
-  border: 1px solid $griglio;
-  //border-radius: 1rem;
   color: $bianco;
   padding: 0.5rem;
+  width: 100%;
 }
 
 .btn--block {
@@ -707,7 +731,6 @@ ul li:first-child {
 .card__text {
   flex: 1 1 auto;
   font-size: 0.875rem;
-  line-height: 1.5;
   margin-bottom: 1.25rem;
   margin-top: 1.25rem;
 }
@@ -830,7 +853,7 @@ h5 {
 /* Google Map (dynamic) - info window */
 .gm-style-iw {
   font-size: 12px;
-  line-height: 18px;
+  // line-height: 18px;
 }
 
 .map__print,
@@ -844,7 +867,7 @@ h5 {
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   font-size: 12px;
-  line-height: 18px;
+  // line-height: 18px;
 }
 
 .map__title,
@@ -884,7 +907,7 @@ h5 {
   width: 19px;
   height: 28px;
   font-size: 24px;
-  line-height: 24px;
+  // line-height: 24px;
   text-align: center;
 }
 
@@ -903,7 +926,7 @@ h5 {
     margin: 0 0 5px;
     background: #fff;
     color: #444;
-    line-height: 25px;
+    // line-height: 25px;
     border: 1px solid #bbb;
   }
 
@@ -946,31 +969,14 @@ h5 {
 
 }
 
-
-
-
-
-
-
-//
-//
-// /* Map */
-//
-// html {
-// 	height: 100%;
-// }
-// body {
-// 	height: 100%;
-// 	margin: 0;
-// 	padding: 0;
-// }
-// #map-canvas {
-// 	height: 100%;
-// }
-// #iw_container .iw_title {
-// 	font-size: 16px;
-// 	font-weight: bold;
-// }
-// .iw_content {
-// 	padding: 15px 15px 15px 0;
-// }
+#maps  {
+border-width: 0px !important;
+height: 100%;
+margin: 0;
+padding: 0;
+position: absolute;
+overflow-y: hidden;
+// hide vertical overflow-x: hidden;
+z-index: -1 !important;
+top: 60px;
+}

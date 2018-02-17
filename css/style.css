@@ -1,5 +1,3 @@
-@charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300");
 @import url("https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300");
 /* variabili */
 body {
@@ -10,6 +8,7 @@ body {
   font-family: 'Roboto','Helvetica Neue', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
+  line-height: 1.8;
   letter-spacing: 0;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -31,14 +30,14 @@ body {
 #menu {
   margin: 0 auto; }
   #menu li {
-    padding-top: 30px;
+    padding: 6px;
     float: left;
     background: #F35553;
     list-style: none;
     text-align: center;
     color: white;
     font-family: sans-serif;
-    margin-top: .5%; }
+    border-top: 1px solid white; }
   #menu ul {
     height: 60px;
     margin-left: -16%;
@@ -46,17 +45,47 @@ body {
     /*Background and text colour change on click*/ }
     #menu ul a li:hover {
       cursor: pointer; }
-    #menu ul a:active {
-      background-color: #efefef;
-      color: #F35553;
-      border-bottom: 2px solid #F35553; }
+    #menu ul a {
+      text-decoration: none; }
   #menu #item2 {
-    margin-left: .2%;
-    width: 49.8%;
-    height: 60px; }
+    width: 50%; }
   #menu #item1 {
     width: 50%;
-    height: 60px; }
+    border-right: 1px solid white; }
+
+#item2:hover, #item1:hover {
+  background-color: #efefef;
+  color: #F35553;
+  font-weight: bold;
+  border-bottom: 1px solid darkred; }
+
+.btn:hover,
+.btn:active {
+  color: #F35553;
+  text-decoration: none; }
+
+.collapse {
+  width: 100%;
+  height: 130px;
+  background-color: #efefef;
+  overflow-x: scroll;
+  white-space: nowrap;
+  justify-content: center; }
+  .collapse img {
+    width: 40px;
+    height: auto; }
+  .collapse ol {
+    font-family: sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+    float: left;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 30%;
+    justify-content: center; }
 
 .nav {
   width: 100%;
@@ -92,7 +121,6 @@ body {
     width: 60px;
     height: 60px;
     padding: 0.5em 1em;
-    background: #F35553;
     border-radius: 0 0.12em 0.12em 0;
     cursor: pointer;
     -webkit-transition: -webkit-box-shadow 0.4s ease;
@@ -262,18 +290,17 @@ body {
   padding-left: 0px; }
 
 .titolo h1 {
-  /* Ciao ‘mbare!: */
   font-family: Avenir-Black;
   font-size: 22px;
   color: black;
   letter-spacing: 0;
-  line-height: 20px; }
+  line-height: 1.8; }
 
 p.titolino {
   font-size: 12px;
   color: black;
   letter-spacing: 0;
-  line-height: 20px; }
+  line-height: 1.8; }
 
 /* button - big: */
 .button1 {
@@ -287,7 +314,6 @@ p.titolino {
   padding: 10px 16px;
   font-size: 18px;
   font-weight: normal;
-  line-height: 1.42857143;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -315,7 +341,6 @@ p.titolino {
   padding: 10px 16px;
   font-size: 18px;
   font-weight: normal;
-  line-height: 1.42857143;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -369,8 +394,7 @@ p.testo {
   margin-top: 3vh;
   padding-left: 5vh;
   padding-right: 5vh;
-  padding-bottom: 5vh;
-  line-height: 6vh; }
+  padding-bottom: 5vh; }
 
 img {
   width: 100%;
@@ -414,8 +438,7 @@ img {
     transition: all ease 1s;
     max-height: 0px;
     overflow: hidden;
-    padding: 0;
-    line-height: 3vh; }
+    padding: 0; }
   .list ul.open {
     max-height: 300px;
     padding: 20px 35px 0px 90px; }
@@ -439,7 +462,6 @@ img {
   text-align: center;
   vertical-align: middle;
   font-size: 15px;
-  line-height: 30px;
   font-weight: bold;
   content: inherit; }
 
@@ -457,10 +479,9 @@ img {
   box-sizing: border-box; }
 
 .btn {
-  background-color: #F35553;
-  border: 1px solid #efefef;
   color: white;
-  padding: 0.5rem; }
+  padding: 0.5rem;
+  width: 100%; }
 
 .btn--block {
   display: block;
@@ -538,7 +559,6 @@ img {
 .card__text {
   flex: 1 1 auto;
   font-size: 0.875rem;
-  line-height: 1.5;
   margin-bottom: 1.25rem;
   margin-top: 1.25rem; }
 
@@ -634,8 +654,7 @@ h5 {
 
 /* Google Map (dynamic) - info window */
 .gm-style-iw {
-  font-size: 12px;
-  line-height: 18px; }
+  font-size: 12px; }
 
 .map__print,
 .map__legend {
@@ -646,8 +665,7 @@ h5 {
   height: 240px;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
-  font-size: 12px;
-  line-height: 18px; }
+  font-size: 12px; }
 
 .map__title,
 .map__address,
@@ -681,7 +699,6 @@ h5 {
   width: 19px;
   height: 28px;
   font-size: 24px;
-  line-height: 24px;
   text-align: center; }
 
 @media only screen and (min-width: 768px) {
@@ -698,7 +715,6 @@ h5 {
     margin: 0 0 5px;
     background: #fff;
     color: #444;
-    line-height: 25px;
     border: 1px solid #bbb; }
 
   .map > .map__legend {
@@ -730,5 +746,14 @@ h5 {
     color: white;
     font-size: 14px;
     text-transform: uppercase; } }
+#maps {
+  border-width: 0px !important;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  overflow-y: hidden;
+  z-index: -1 !important;
+  top: 60px; }
 
 /*# sourceMappingURL=style.css.map */

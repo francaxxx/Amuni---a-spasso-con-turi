@@ -27,7 +27,7 @@
   <header>
     <nav class="nav">
       <div class="row">
-        <div class="col-xs-3 col-md-3">
+        <div class="col-xs-4 col-md-4">
           <div class="outer-menu">
             <input class="checkbox-toggle" type="checkbox" />
             <div class="hamburger">
@@ -46,7 +46,7 @@
             <polyline id="shape" stroke-linecap="round" stroke-linejoin="round" points="75.3333333 175.764098 86.1904762 168.110902 97.047619 175.764098"></polyline>
         </g>
     </g>
-</svg><a href="#">Home</a></li>
+</svg><a href="index.html">Home</a></li>
                     <li>
                       <svg width="73px" height="73px" viewBox="0 0 73 73" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -69,7 +69,7 @@
             </g>
         </g>
     </g>
-</svg><a href="#">Itinerari</a></li>
+</svg><a href="itinerari.html">Itinerari</a></li>
                     <li>
                       <svg width="73px" height="73px" viewBox="0 0 73 73" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -109,7 +109,7 @@
         </g>
     </g>
 </svg>
-                      <a href="#">Impostazioni</a></li>
+                      <a href="impostazioni.html">Impostazioni</a></li>
                   </ul>
                 </div>
               </div>
@@ -121,7 +121,8 @@
         <!--chiudo col-xs-4 col-md-4 -->
       </div>
       <!--chiudo row -->
-      <div class="col-xs-6 col-md-6">
+      <div class="col-xs-4 col-md-4">
+        <a href="index.html">
         <svg class="logotipo" viewBox="0 0 377 84" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                 <g id="amuni" fill-rule="nonzero" fill="#FFFFFF">
@@ -137,9 +138,10 @@
                 </g>
             </g>
         </svg>
+      </a>
       </div>
       <!-- col-xs-4 col-md-4-->
-      <div class="col-xs-3 col-md-3">
+      <div class="col-xs-4 col-md-4">
         <!--Hamburger menu toggle button-->
         <div id="menu-btn">
 
@@ -165,14 +167,40 @@
       <!-- col-xs-4 col-md-4-->
       <div id="menu">
         <ul>
-          <a href="#">
-            <li id=item1>Lista itinerari</li>
-          </a>
-          <a href="#">
-            <li id="item2">Mappa</li>
-          </a>
+          <li id=item1>
+            <a class="btn" data-toggle="collapse" href="#lista" role="button" aria-expanded="false" aria-controls="lista">
+          Lista itinerari
+        </a>
+          </li>
+
+          <li id="item2">
+            <a  href="map.html" class="btn" role="button">
+              Mappa
+            </a>
+          </li>
         </ul>
-      </div>
+          <div class="collapse" id="lista">
+
+              <ol class="lista col-xs-6 col-md-4">
+                Piazza <br />Università<br /> <img class="lista" src="https://www.francescabarbagallo.com/wp-content/uploads/2018/02/XT104295.png" width="40px" height="40px">
+              </ol>
+              <ol class="lista col-xs-6 col-md-4">
+                Piazza <br />Duomo<br /> <img class="lista" src="https://www.francescabarbagallo.com/wp-content/uploads/2018/02/XT104295.png" width="40px" height="40px">
+              </ol>
+              <ol class="lista col-xs-6 col-md-4">
+                Scalinata<br /> Alessi<br /> <img class="lista" src="https://www.francescabarbagallo.com/wp-content/uploads/2018/02/XT104295.png" width="40px" height="40px">
+              </ol>
+              <ol class="lista col-xs-6 col-md-4">
+                Terme <br />della Rotonda<br /> <img class="lista" src="https://www.francescabarbagallo.com/wp-content/uploads/2018/02/XT104295.png" width="40px" height="40px">
+              </ol>
+              <ol class="lista col-xs-6 col-md-4">
+                Monastero<br /> Benedettini<br /> <img class="lista" src="https://www.francescabarbagallo.com/wp-content/uploads/2018/02/XT104295.png" width="40px" height="40px">
+              </ol>
+              <ol class="lista col-xs-6 col-md-4">
+                Trattoria <br />da Achille<br /> <img class="lista" src="https://www.francescabarbagallo.com/wp-content/uploads/2018/02/XT104295.png" width="40px" height="40px">
+              </ol>
+          </div>
+        </div> <!-- chiudo menu-->
       <!-- chiudo menu-->
     </nav>
   </header>
@@ -262,10 +290,12 @@
 
 
   <!--jquery -->
-  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <!-- collegamento Js -->
   <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/menu.js"></script>
+
 </body>
 
 </html>

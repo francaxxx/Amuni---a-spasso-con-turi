@@ -142,8 +142,13 @@
     <div id="menu">
       <ul>
         <a href="#">
-          <li id=item1>Lista itinerari</li>
-        </a>
+          <li id=item1>Lista itinerari</li></a>
+                <ol>Piazza Duomo <img src="https://www.francescabarbagallo.com/wp-content/uploads/2018/02/XT104295.png" width="40px" height="40px">
+</ol>
+<ol>Università <img src="https://www.francescabarbagallo.com/wp-content/uploads/2018/02/XT104295.png" width="40px" height="40px">
+</ol>
+<ol>Terme della rotonda<img src="https://www.francescabarbagallo.com/wp-content/uploads/2018/02/XT104295.png" width="40px" height="40px">
+</ol>
         <a href="#">
           <li id="item2">Mappa</li>
         </a>
