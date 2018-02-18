@@ -196,8 +196,9 @@ body {
     -ms-flex-pack: center;
     justify-content: center; }
   .nav .outer-menu .menu > div {
-    width: 200vw;
-    height: 200vw;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
     color: #efefef;
     background: #F35553;
     -webkit-transition: all 0.4s ease;
@@ -220,7 +221,6 @@ body {
     -ms-flex-pack: center;
     justify-content: center; }
   .nav .outer-menu .menu > div > div {
-    max-height: 100vh;
     opacity: 0;
     -webkit-transition: opacity 0.4s ease;
     transition: opacity 0.4s ease;
@@ -240,7 +240,7 @@ body {
     padding: 0 1em;
     margin: 0;
     display: block;
-    max-height: 100vh; }
+    max-height: 100%; }
   .nav .outer-menu .menu > div > div > ul > li {
     padding: 0;
     margin: 1em;
@@ -379,15 +379,13 @@ iframe.margin-top {
   padding: 15px;
   background-color: #BE2525;
   border-radius: 28px;
-  width: 100%;
   height: 60px;
-  margin-left: -20px;
+  float: right;
   color: white;
   text-decoration: none; }
 
 h5.nomePercorso {
   margin-left: 3vh;
-  margin-top: 0px;
   font-size: 2.5vh; }
 
 sub {

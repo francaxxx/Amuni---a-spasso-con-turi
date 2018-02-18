@@ -29,18 +29,19 @@
 
   @media screen and (max-width:520px){
     .small-button {
-          margin-left: 4vh;
+          margin-right: 1vh;
+          margin-top: -10px;
       }
 
   }
 
-}
 
 
 @media screen and (max-width:394px){
-  .small-button {
-        margin-left: 1em;
-    }
+  /* .small-button {
+        margin-right: 1vh;
+        margin-top: -10px;
+    } */
 
     prova {
     margin-bottom: 30px;
