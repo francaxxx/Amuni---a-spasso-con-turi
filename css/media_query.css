@@ -1,36 +1,36 @@
 
 @media screen and (max-width: 1450px) {
-    .small-button {
+    /* .small-button {
     margin-left: 30vh;
-    }
+    } */
     .icon {
       left: 98%;
     }
 }
-@media screen and (max-width: 1199px) {
+/* @media screen and (max-width: 1199px) {
   .small-button {
     margin-left: 25vh;
   }
-}
+} */
 @media screen and (max-width:992px){
-  .small-button {
+  /* .small-button {
   margin-left: 15vh;
-  }
+  } */
   .icon {
     left: 96%;
   }
 }
 
-@media screen and (max-width:680px){
+/* @media screen and (max-width:680px){
   .small-button {
   margin-left: 8vh;
   }
-}
+} */
 
   @media screen and (max-width:520px){
     .small-button {
-    margin-left: 1vh;
-    padding: 9px;
+          margin-left: 4vh;
+      }
 
   }
 
@@ -39,7 +39,7 @@
 
 @media screen and (max-width:394px){
   .small-button {
-    margin-left: -2vh;
+        margin-left: 1em;
     }
 
     prova {
@@ -51,9 +51,9 @@
 }
 }
 @media screen and (max-width:330px){
-  .small-button {
+  /* .small-button {
     margin-left: -6vh;
-    }
+    } */
 
   .icon {
     left: 90%;

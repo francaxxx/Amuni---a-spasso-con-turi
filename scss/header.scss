@@ -45,7 +45,7 @@ body {
 margin: 0 auto;
 
 li {
-  padding:6px;
+  padding:12px 6px;
   float:left;
   background:$tomato;
   list-style:none;
@@ -121,6 +121,11 @@ a {
   line-height:1;
   justify-content: center;
   }
+}
+
+#lista a {
+  color: $tomato;
+  text-decoration: none;
 }
 
 

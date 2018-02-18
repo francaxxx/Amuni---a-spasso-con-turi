@@ -29,7 +29,7 @@ body {
 #menu {
   margin: 0 auto; }
   #menu li {
-    padding: 6px;
+    padding: 12px 6px;
     float: left;
     background: #F35553;
     list-style: none;
@@ -84,6 +84,10 @@ body {
     width: 30%;
     line-height: 1;
     justify-content: center; }
+
+#lista a {
+  color: #F35553;
+  text-decoration: none; }
 
 .nav {
   width: 100%;
