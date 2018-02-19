@@ -11,14 +11,12 @@
     gli aspetti innovativi del progetto dati dal tessuto culturale della città stessa.">
   <meta name="keywords" content="Web-app, Catania touristic guide, Catania free tour, Amunì, a spasso con Turiddu, free, guida turistica di Catania">
   <meta name="author" content="Francesca Barbagallo">
-
-
   <title>Amunì, a spasso con Turiddu</title>
+  <link rel="icon" href="https://www.francescabarbagallo.com/wp-content/uploads/2018/02/amuni.png" sizes="32x32">
   <!-- collegamento css -->
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <link href="css/media_query.css" rel="stylesheet" type="text/css">
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
 </head>
 
@@ -180,7 +178,7 @@
         </ul>
           <div class="collapse" id="lista">
             <ol class="lista col-xs-6 col-md-4">
-            <a href="primopercorso.html">    Piazza <br />Università<br /> <img class="lista" src="https://www.francescabarbagallo.com/wp-content/uploads/2018/02/univ.png" width="40px" height="40px">
+            <a href="primopercorso.html">    Castello<br />Ursino<br /> <img class="lista" src="https://www.francescabarbagallo.com/wp-content/uploads/2018/02/ursino.png" width="40px" height="40px">
           </a>  </ol>
            <ol class="lista col-xs-6 col-md-4">
               <a href="piazzaduomo.html">   Piazza <br />Duomo<br /> <img class="lista" src="https://www.francescabarbagallo.com/wp-content/uploads/2018/02/piazzaDuomo.png" width="40px" height="40px">
@@ -209,13 +207,14 @@
           <div id="background-img"></div>
     <div id="list-1" class="list">
       <img src="https://www.francescabarbagallo.com/wp-content/uploads/2018/02/XT104295.png" width="40px" height="40px">
-      <div class="title">1. Piazza Università</div>
+      <div class="title">1. Castello Ursino</div>
       <div class="icon">i</div>
       <ul>
         <li>Durata visita: 6 min</li>
-        <li>Piazza dell'Università si trova a Catania, lungo la via Etnea, a meno di cento metri da piazza Duomo.</li>
-        <li>Orari: Aperto 24 ore su 24</li>
-        <li>Zona pedonale</li>
+        <li>Il castello Ursino di Catania fu costruito da Federico II di Svevia nel XIII secolo.
+          È situato in Piazza Federico di Svevia.</li>
+        <li>Orari: Aperto 9 ore su 19</li>
+        <li>Zona non pedonale</li>
       </ul>
     </div>
 <div class="spazio"></div>
@@ -284,14 +283,12 @@
       <div class="spazio"></div>
       <div class="row">
         <div class="col-xs-12 col-md-12">
-          <div class="w3-content w3-section" style="max-width:100%">
-            <img class="mySlides" src="http://www.biuso.eu/wp-content/uploads/2009/04/castello_ursino_2.jpg" style="width:100%; margin-bottom:30px;">
-            <img class="mySlides" src="https://images-3662.kxcdn.com/fidelitynews/wp-content/uploads/sites/9/2014/11/s_agata_CT_Fotolia_43025087_Subscription_XXL.jpg?w=560" style="width:100%; margin-bottom:30px;">
-             <img class="mySlides" src="https://www.typicalsicily.it/wp/wp-content/uploads/2015/06/Monumento-a-Catania-Fontana-dellAmenano.jpg" style="width:100%; margin-bottom:30px;">
-              <img class="mySlides" src="https://c1.staticflickr.com/3/2874/9976630255_c3fbb4372e_b.jpg" style="width:100%; margin-bottom:30px;">
-               <img class="mySlides" src="http://www.vivict.it/wp-content/uploads/2013/12/terme.jpg" style="width:100%; margin-bottom:30px;">
-                   <img class="mySlides" src="http://www.trattoriaachille.com/img/home_slide/slide_1.jpg" style="width:100%; margin-bottom:30px;">
-          </div>
+            <img class="mySlides" src="https://www.francescabarbagallo.com/wp-content/uploads/2018/02/castelloursino.jpg" alt="Castello Ursino" style="width:100%; margin-bottom:30px;">
+            <img class="mySlides" src="https://www.francescabarbagallo.com/wp-content/uploads/2018/02/duomo.jpg" alt="Piazza Duomo" style="width:100%; margin-bottom:30px;">
+             <img class="mySlides" src="https://www.francescabarbagallo.com/wp-content/uploads/2018/02/alessi.jpg" alt="Scalinata Alessi" style="width:100%; margin-bottom:30px;">
+              <img class="mySlides" src="https://www.francescabarbagallo.com/wp-content/uploads/2018/02/terme-1.jpg"alt="Terme della Rotonda"  style="width:100%; margin-bottom:30px;">
+               <img class="mySlides" src="https://www.francescabarbagallo.com/wp-content/uploads/2018/02/monastero.jpg" alt="Monastero dei Benedettini"  style="width:100%; margin-bottom:30px;">
+                   <img class="mySlides" src="https://www.francescabarbagallo.com/wp-content/uploads/2018/02/achille.jpg"  alt="Trattoria da Achille" style="width:100%; margin-bottom:30px;">
         </div>
         <!-- chiudo col-xs-12 col-md-12-->
       </div>
@@ -318,12 +315,27 @@
         <!-- chiudo row-->
       </div>
       <!-- chiudo container-->
+      <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+      </script>
 
       <!--jquery -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <!-- collegamento Js -->
-  <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript" src="js/menu.js"></script>
 
 </body>

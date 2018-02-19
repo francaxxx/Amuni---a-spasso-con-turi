@@ -28,7 +28,8 @@ body {
     margin-left: 10px; }
 
 #menu {
-  margin: 0 auto; }
+  margin: 0 auto;
+  /*Cursor and text undelrine on hover*/ }
   #menu li {
     padding: 12px 6px;
     float: left;
@@ -39,24 +40,25 @@ body {
     border-top: 1px solid white; }
   #menu ul {
     height: 60px;
-    margin-left: -16%;
-    /*Cursor and text undelrine on hover*/
-    /*Background and text colour change on click*/ }
-    #menu ul a li:hover {
-      cursor: pointer; }
-    #menu ul a {
-      text-decoration: none; }
-  #menu #item2 {
-    width: 50%; }
-  #menu #item1 {
-    width: 50%;
-    border-right: 1px solid white; }
+    margin-left: -16%; }
+  #menu ul:active {
+    color: #F35553; }
+  #menu a:hover {
+    cursor: pointer;
+    font-weight: bold; }
+  #menu a {
+    text-decoration: none; }
+
+/*Background and text colour change on click*/
+#item2 {
+  width: 50%; }
+
+#item1 {
+  width: 50%;
+  border-right: 1px solid white; }
 
 #item2:hover, #item1:hover {
-  background-color: #efefef;
-  color: #F35553;
-  font-weight: bold;
-  border-bottom: 1px solid darkred; }
+  background-color: #efefef; }
 
 .btn:hover,
 .btn:active {
@@ -67,7 +69,9 @@ body {
   width: 100%;
   height: 130px;
   background-color: #efefef;
-  overflow-x: scroll;
+  border-bottom: 1px solid #F35553;
+  overflow-y: scroll;
+  overflow-x: hidden;
   white-space: nowrap;
   justify-content: center; }
   .collapse img {
@@ -79,7 +83,7 @@ body {
     font-size: 12px;
     float: left;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-bottom: 20px;
     display: inline-block;
     width: 30%;
@@ -307,7 +311,11 @@ p.titolino {
 
 /* button - big: */
 .button1 {
-  background: #53AAF3;
+  background: #53aaf3;
+  background: -moz-linear-gradient(top, #53aaf3 0%, #629fd1 53%, #4191d3 100%);
+  background: -webkit-linear-gradient(top, #53aaf3 0%, #629fd1 53%, #4191d3 100%);
+  background: linear-gradient(to bottom, #53aaf3 0%, #629fd1 53%, #4191d3 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#53aaf3', endColorstr='#4191d3',GradientType=0 );
   border-radius: 49px;
   width: 100%;
   font-size: 15px;
@@ -318,21 +326,16 @@ p.titolino {
   font-size: 18px;
   font-weight: normal;
   text-align: center;
-  white-space: nowrap;
   vertical-align: middle;
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-image: none;
-  border: 1px solid transparent; }
+  cursor: pointer; }
 
 /* button 2 - big: */
 .button2 {
-  background: #F35553;
+  background: #f27979;
+  background: -moz-linear-gradient(top, #f27979 0%, #F35553 99%);
+  background: -webkit-linear-gradient(top, #f27979 0%, #F35553 99%);
+  background: linear-gradient(to bottom, #f27979 0%, #F35553 99%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f27979', endColorstr='$tomato',GradientType=0 );
   border-radius: 49px;
   width: 100%;
   font-size: 15px;
@@ -344,18 +347,8 @@ p.titolino {
   padding: 10px 16px;
   font-size: 18px;
   font-weight: normal;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-image: none;
-  border: 1px solid transparent; }
+  text-align: center; }
 
 /* Map Page */
 iframe.margin-top {
@@ -365,7 +358,11 @@ iframe.margin-top {
 .prova {
   width: 100%;
   height: 8vh;
-  background-color: #BE2525;
+  background: #d32a2a;
+  background: -moz-linear-gradient(top, #d32a2a 0%, #cc2e28 48%, #be2525 100%);
+  background: -webkit-linear-gradient(top, #d32a2a 0%, #cc2e28 48%, #be2525 100%);
+  background: linear-gradient(to bottom, #d32a2a 0%, #cc2e28 48%, #be2525 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d32a2a', endColorstr='#be2525',GradientType=0 );
   margin-top: 60px;
   margin-bottom: 35px; }
   .prova h2 {
@@ -376,13 +373,24 @@ iframe.margin-top {
     text-align: center; }
 
 .small-button {
-  padding: 15px;
-  background-color: #BE2525;
+  padding: 10px;
+  background: #d32a2a;
+  background: -moz-linear-gradient(top, #d32a2a 0%, #cc2e28 48%, #be2525 100%);
+  background: -webkit-linear-gradient(top, #d32a2a 0%, #cc2e28 48%, #be2525 100%);
+  background: linear-gradient(to bottom, #d32a2a 0%, #cc2e28 48%, #be2525 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d32a2a', endColorstr='#be2525',GradientType=0 );
   border-radius: 28px;
-  height: 60px;
   float: right;
   color: white;
   text-decoration: none; }
+  .small-button *:focus {
+    color: white;
+    background-color: #BE2525;
+    border-color: #761c19; }
+  .small-button *:hover {
+    color: white;
+    background-color: #BE2525;
+    border-color: #761c19; }
 
 h5.nomePercorso {
   margin-left: 3vh;
@@ -423,7 +431,7 @@ img {
 .list {
   width: 100%;
   border-bottom: 1px solid #BE2525;
-  border-radius: 10px;
+  border-radius: 30px;
   box-sizing: border-box;
   position: relative;
   font-size: .8em;
@@ -433,7 +441,6 @@ img {
     width: 40px;
     height: 40px;
     position: absolute;
-    top: -4px;
     margin-top: -2px; }
   .list ul {
     transition: all ease 1s;
@@ -469,9 +476,6 @@ img {
 .spazio {
   width: 20px;
   height: 60px; }
-
-.mySlides {
-  display: none; }
 
 /* Itinerari page */
 *,
@@ -634,7 +638,7 @@ h5 {
   position: relative;
   display: block;
   width: 100%;
-  height: 500px;
+  height: 500px !important;
   overflow: hidden;
   cursor: pointer; }
 
@@ -665,14 +669,13 @@ h5 {
   display: block;
   height: 240px;
   overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
   font-size: 12px; }
 
 .map__title,
 .map__address,
 .map__description {
   display: block;
-  color: #000; }
+  color: black; }
 
 .map__title {
   margin: 0;
@@ -714,7 +717,7 @@ h5 {
     overflow-y: auto;
     padding: 5px 10px;
     margin: 0 0 5px;
-    background: #fff;
+    background: white;
     color: #444;
     border: 1px solid #bbb; }
 
@@ -722,10 +725,10 @@ h5 {
     display: none; }
 
   .map__legend strong {
-    color: #000; }
+    color: black; }
 
   .map__legend a {
-    color: #000; }
+    color: black; }
 
   .map__legend a:hover {
     color: #F35553; }
@@ -746,7 +749,8 @@ h5 {
     background: #F35553;
     color: white;
     font-size: 14px;
-    text-transform: uppercase; } }
+    text-transform: uppercase;
+    height: 500px; } }
 #maps {
   border-width: 0px !important;
   height: 100%;
@@ -754,7 +758,6 @@ h5 {
   padding: 0;
   position: absolute;
   overflow-y: hidden;
-  z-index: -1 !important;
   top: 60px; }
 
 /*# sourceMappingURL=style.css.map */

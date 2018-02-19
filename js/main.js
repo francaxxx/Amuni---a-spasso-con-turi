@@ -1,5 +1,3 @@
-
-
 $(document).on('ready', init);
 
 var myIndex = 0;

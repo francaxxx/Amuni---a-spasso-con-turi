@@ -27,7 +27,8 @@ body {
     margin-left: 10px; }
 
 #menu {
-  margin: 0 auto; }
+  margin: 0 auto;
+  /*Cursor and text undelrine on hover*/ }
   #menu li {
     padding: 12px 6px;
     float: left;
@@ -38,24 +39,25 @@ body {
     border-top: 1px solid white; }
   #menu ul {
     height: 60px;
-    margin-left: -16%;
-    /*Cursor and text undelrine on hover*/
-    /*Background and text colour change on click*/ }
-    #menu ul a li:hover {
-      cursor: pointer; }
-    #menu ul a {
-      text-decoration: none; }
-  #menu #item2 {
-    width: 50%; }
-  #menu #item1 {
-    width: 50%;
-    border-right: 1px solid white; }
+    margin-left: -16%; }
+  #menu ul:active {
+    color: #F35553; }
+  #menu a:hover {
+    cursor: pointer;
+    font-weight: bold; }
+  #menu a {
+    text-decoration: none; }
+
+/*Background and text colour change on click*/
+#item2 {
+  width: 50%; }
+
+#item1 {
+  width: 50%;
+  border-right: 1px solid white; }
 
 #item2:hover, #item1:hover {
-  background-color: #efefef;
-  color: #F35553;
-  font-weight: bold;
-  border-bottom: 1px solid darkred; }
+  background-color: #efefef; }
 
 .btn:hover,
 .btn:active {
@@ -66,7 +68,9 @@ body {
   width: 100%;
   height: 130px;
   background-color: #efefef;
-  overflow-x: scroll;
+  border-bottom: 1px solid #F35553;
+  overflow-y: scroll;
+  overflow-x: hidden;
   white-space: nowrap;
   justify-content: center; }
   .collapse img {
@@ -78,7 +82,7 @@ body {
     font-size: 12px;
     float: left;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-bottom: 20px;
     display: inline-block;
     width: 30%;
