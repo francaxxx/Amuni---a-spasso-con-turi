@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Cabin');
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+/*  MY css */
+
+
+
+body {
+  background-color: #F35553;
+}
+
+
+section {
+  font-family: 'Cabin', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  height: 100vh;
+  letter-spacing: 1px;
+
+}
+
+.border-fixed {
+  position: fixed;
+  top: 20px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  border: 5px solid #F9D47B;
+  z-index: 90;
+  pointer-events:none;
+}
+
+.content {
+  z-index: 100;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.testo {
+h1 {
+  font-size: 90px;
+  color: #F9D47B;
+  font-weight: 700;
+  font-family: 'Amatic SC', cursive;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  margin-left: -35px;
+}
+
+h2 {
+  font-size: 25px;
+  color: white;
+  line-height: 35px;
+}
+
+p {
+  padding: 20px 0;
+  color: white;
+}
+
+a.button {
+  border-radius: 150px;
+  /*background: rgba(239, 255, 0, 0.45);*/
+  background-color:#F9D47B;
+  padding: 5% 10%;
+  margin: 10px 0;
+  color: #F35553;
+  font-family: "Raleway";
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  // display: block;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  top: 20px;
+}
+
+a.button:hover {
+  top: 2px;
+  text-decoration: none;
+}
+}
+.balloon {
+  margin: 0!important;
+  padding: 0!important;
+  background-image: url(https://www.francescabarbagallo.com/wp-content/uploads/2018/02/amuni6.jpg);
+  background-position:top;
+  background-position:left;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  // background-size: contain;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.max-width {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .balloon {
+    background-size: contain;
+    background-position: top center;
+    width: 100%;
+    height: 667px;
+  }
+  .max-width {
+    height: 380px;
+  }
+
+  .testo {
+  h1 {
+    font-size: 28vw;
+    padding-top: -200px;
+    margin-left: 35px;
+  }
+  h2 {
+    padding:0 30px;
+
+  }
+
+  p {
+    padding: 20px 25px;
+  }
+  a.button {
+    margin: 10px 20px;
+  }
+}
+
+  .max-width {
+    margin: 0 auto;
+  }
+}
