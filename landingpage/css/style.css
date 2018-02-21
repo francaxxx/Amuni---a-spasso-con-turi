@@ -109,14 +109,16 @@ section {
   top: 20px; }
 
 a.button:hover {
-  font-size: 16px;
+  font-size: 15px;
   font-size: bold;
-  text-decoration: none; }
+  text-decoration: none;
+  background-color: #F7C85B; }
 
 a.icon:hover {
   font-size: bold;
   text-decoration: none;
-  font-size: 34px; }
+  font-size: 33px;
+  color: #F7C85B; }
 
 .balloon {
   margin: 0 !important;
@@ -143,11 +145,14 @@ a.icon:hover {
   margin-top: 60px;
   margin-left: 50px; }
 
-@media (max-width: 767px) {
+@media (max-width: 1080px) {
   .row img {
     width: auto;
-    height: 50px;
-    margin: 43px auto;
+    height: 30px;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
     display: block; }
 
   .balloon {
@@ -160,26 +165,207 @@ a.icon:hover {
       text-align: center;
       color: #F9D47B;
       position: relative;
-      bottom: -150px;
-      bottom: -480px;
-      font-size: 9vh;
-      left: 45%; }
+      bottom: -75%;
+      font-size: 7vh;
+      left: 50%; }
 
   .max-width {
-    height: 380px; }
+    height: 250px; }
 
   .testo h1 {
-    font-size: 28vw;
     padding-top: -200px;
-    margin-left: 35px; }
+    margin-left: 35px;
+    font-size: 70px; }
   .testo h2 {
-    padding: 0 30px; }
+    padding: 30px; }
   .testo p {
     padding: 20px 25px; }
   .testo a.button {
-    margin: 10px 20px; }
+    margin: 10px 20px;
+    padding: 4% 4%;
+    top: 40px; }
 
   .max-width {
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  .icon {
+    margin-top: 90px;
+    margin-left: 50px;
+    margin-bottom: 60px; } }
+@media (max-width: 767px) and (orientation: portrait) {
+  .row img {
+    width: auto;
+    height: 50px;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    display: block; }
+
+  .balloon {
+    background-size: contain;
+    background-image: url(https://www.francescabarbagallo.com/wp-content/uploads/2018/02/amu.jpg);
+    background-position: center center;
+    width: 100%;
+    height: 667px; }
+    .balloon .fa-hand-point-down {
+      text-align: center;
+      color: #F9D47B;
+      position: relative;
+      bottom: -70%;
+      font-size: 9vh;
+      left: 42%; }
+
+  .max-width {
+    height: 250px; }
+
+  .testo h1 {
+    padding-top: -200px;
+    margin-left: 35px;
+    font-size: 70px; }
+  .testo h2 {
+    padding: 30px; }
+  .testo p {
+    padding: 20px 25px; }
+  .testo a.button {
+    margin: 10px 20px;
+    top: 100px; }
+
+  .max-width {
+    margin: 0 auto; }
+
+  .icon {
+    margin-top: 150px;
+    margin-left: 50px;
+    margin-bottom: 60px; } }
+@media (max-width: 374px) and (orientation: portrait) {
+  .icon {
+    margin-top: 160px; }
+
+  .testo a.button {
+    top: 120px; }
+
+  .balloon .fa-hand-point-down {
+    bottom: -65%; }
+
+  .testo h1 {
+    margin-top: 0; }
+
+  .testo h2 {
+    padding: 10px 30px; } }
+@media (max-width: 288px) and (orientation: portrait) {
+  .icon {
+    margin-top: 220px; }
+
+  .testo a.button {
+    top: 190px; }
+
+  .balloon .fa-hand-point-down {
+    bottom: -50%; } }
+@media (max-width: 769px) and (orientation: landscape) {
+  .balloon {
+    background-size: contain;
+    background-image: url(https://www.francescabarbagallo.com/wp-content/uploads/2018/02/amuni6.jpg);
+    background-position: center center;
+    width: 100%;
+    height: 500px; }
+    .balloon .fa-hand-point-down {
+      text-align: center;
+      color: #F9D47B;
+      position: relative;
+      bottom: -67%;
+      font-size: 9vh;
+      left: 50%; }
+
+  .max-width {
+    height: 250px;
+    margin: 0 auto; }
+
+  .testo h1 {
+    padding-top: -200px;
+    margin-left: 35px;
+    font-size: 70px; }
+  .testo h2 {
+    padding-left: 30px; }
+  .testo p {
+    padding: 20px 25px; }
+  .testo a.button {
+    margin: 10px 20px;
+    top: -40px;
+    padding: 2% 3%; }
+
+  .icon {
+    margin-top: 0px;
+    margin-left: 40px;
+    margin-bottom: 60px; } }
+@media (max-width: 668px) and (orientation: landscape) {
+  .balloon {
+    width: 100%;
+    background-size: contain;
+    background-image: url(https://www.francescabarbagallo.com/wp-content/uploads/2018/02/amuni6.jpg);
+    background-position: center;
+    height: 400px; }
+    .balloon .balloon .fa-hand-point-down {
+      bottom: -60%; }
+
+  .testo h1 {
+    margin-bottom: -20px; }
+  .testo h2 {
+    padding-left: 30px; }
+  .testo p {
+    font-size: 15px;
+    margin-top: -20px;
+    padding: 20px 35px; }
+  .testo .max-width {
+    height: 105px; }
+  .testo a.button {
+    top: 130px;
+    padding: 3% 5%; }
+
+  .icon {
+    margin-top: 170px; } }
+@media (max-width: 813px) and (orientation: landscape) {
+  .row img {
+    width: 0;
+    height: 0; }
+
+  .balloon {
+    width: 100%;
+    background-size: contain;
+    background-image: url(https://www.francescabarbagallo.com/wp-content/uploads/2018/02/amuni6.jpg);
+    background-position: center;
+    height: 400px; }
+    .balloon .fa-hand-point-down {
+      text-align: center;
+      color: #F9D47B;
+      position: relative;
+      bottom: -80%;
+      font-size: 6vh;
+      left: 50%; }
+
+  .max-width {
+    height: 140px;
+    margin: 0 auto; }
+
+  .testo h1 {
+    padding-top: -170px;
+    margin-left: 35px;
+    font-size: 70px; }
+  .testo h2 {
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .testo p {
+    padding: 20px 25px; }
+  .testo a.button {
+    top: 90px;
+    padding: 2% 3%;
+    left: 24px; }
+
+  .icon {
+    margin-top: 120px;
+    margin-left: 40px;
+    margin-bottom: 60px;
+    font-size: 23px; } }
 
 /*# sourceMappingURL=style.css.map */
